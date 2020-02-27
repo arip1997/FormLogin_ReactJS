@@ -6,29 +6,36 @@ const FormLogin = () =>{
     return(
             <div>
                 <div className="container">
+                    <form method="get">
                     <b><h3>Form Login</h3></b>
                     <div class="card">
                         <div class="card-body">
                             <b><h1>Tugas Pertemuan Ketiga</h1></b>
                             <div className="form-inline text">
                                 <p for="username" class="mr-sm-2 p1">Username:</p>  
-                                <input type="username" class="form-control mb-2 mr-sm-2" placeholder="Enter Username" id="username"></input>
-                                <p for="username" class="mr-sm-2 p1">Password :  </p>  
-                                <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Enter Password" id="password"></input>
+                                <input type="username" name="user" class="form-control mb-2 mr-sm-2" placeholder="Enter Username" id="username"></input>
+                                
+                                <p for="username"  class="mr-sm-2 p1">Password :  </p>  
+                                <input type="password" name="pass" class="form-control mb-2 mr-sm-2" placeholder="Enter Password" id="password"></input>
                             </div>
-                            <div className="btn">
+                            <button type="submit"className="btn">
                                 Login
-                            </div>
+                            </button>
+                            <right><div><a href="lupapassword.html">Forget Password ?</a></div></right>
+                            
                             <div className="check" >
-                                <input type="checkbox" name="remember"></input>  Remember Me
+                                <input type="checkbox" name="remember"></input>  Remember Me!
                             </div>
+                            <br></br>
+                            
                             <center>
-                                <div className="btn-cancel">
+                                <button type="submit" className="btn-cancel">
                                     Cancel
-                                </div>
+                                </button>
                             </center>
                         </div>
                     </div>
+                </form>
                 </div> 
             </div>
     );
